@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Mestre</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand">0</div>
+            </div>
+            
+            <div class="buttons">
+                <button class="span-2" data-action="clear">AC</button>
+                <button data-action="delete">DEL</button>
+                <button data-action="operation">÷</button>
+                
+                <button data-action="number">7</button>
+                <button data-action="number">8</button>
+                <button data-action="number">9</button>
+                <button data-action="operation">×</button>
+                
+                <button data-action="number">4</button>
+                <button data-action="number">5</button>
+                <button data-action="number">6</button>
+                <button data-action="operation">-</button>
+                
+                <button data-action="number">1</button>
+                <button data-action="number">2</button>
+                <button data-action="number">3</button>
+                <button data-action="operation">+</button>
+                
+                <button data-action="number">0</button>
+                <button data-action="number">.</button>
+                <button class="span-2" data-action="calculate">=</button>
+            </div>
+            
+            <div class="scientific-buttons">
+                <button data-action="scientific">sin</button>
+                <button data-action="scientific">cos</button>
+                <button data-action="scientific">tan</button>
+                <button data-action="scientific">√</button>
+                <button data-action="scientific">^</button>
+                <button data-action="scientific">log</button>
+                <button data-action="scientific">ln</button>
+                <button data-action="scientific">π</button>
+                <button data-action="scientific">e</button>
+                <button data-action="scientific">(</button>
+                <button data-action="scientific">)</button>
+                <button data-action="scientific">!</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>Calculadora Mestre © Este site não foi tocado por um só bit de IA.(talvez.) | Pressione F12 para ver o console</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
